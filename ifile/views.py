@@ -1,4 +1,5 @@
 import json
+import logging
 from django.shortcuts import render
 
 # Create your views here.
@@ -30,15 +31,20 @@ def upload_callback(request):
 
     if not request.POST.has_key('key'):
         print 'request has not key attribute'
+        logging.debug('request has not key attribute')
+
     if request.method == 'POST':
         if request.POST.has_key('key'):
             key = request.POST['key']
             download_url = qiniu.rs.make_base_url(Q_DOMAIN, key)
     else:
-        return 'request not belong to POST'
+        print 'request not belong to POST'
+        logging.debug('request not belong to POST')
 
     # if NEED_EXPIRE:
     #     from cleaner import add_to_expire_queue
     #     add_to_expire_queue(key)
     print download_url
+    logging.debug('download_url: ' + download_url)
+
     return HttpResponse(json.dumps(download_url), content_type="application/json")

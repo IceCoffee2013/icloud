@@ -1,0 +1,44 @@
+import json
+from django.shortcuts import render
+
+# Create your views here.
+from django.template import loader, Context
+from django.http import HttpResponse
+from ifile.config import BUCKET_NAME, CALLBACK_URL, Q_DOMAIN
+from q import qiniu, ACCESS_KEY, SECRET_KEY
+
+
+def home(request):
+    policy = qiniu.rs.PutPolicy(BUCKET_NAME)
+    policy.callbackBody = 'key=$(x:key)'
+    policy.callbackUrl = CALLBACK_URL
+    up_token = policy.token()
+
+    # new sdk
+    # auth = qiniu.Auth(ACCESS_KEY, SECRET_KEY)
+    # policy = {
+    #     'callbackUrl' : 'key=$(x:key)',
+    #     'callbackBody' : CALLBACK_URL,
+    # }
+    # up_token = auth.upload_token(BUCKET_NAME, key=None, policy=policy)
+
+    t = loader.get_template("index.html")
+    c = Context({'up_token': up_token})
+    return HttpResponse(t.render(c))
+
+def upload_callback(request):
+
+    if not request.POST.has_key('key'):
+        print 'request has not key attribute'
+    if request.method == 'POST':
+        if request.POST.has_key('key'):
+            key = request.POST['key']
+            download_url = qiniu.rs.make_base_url(Q_DOMAIN, key)
+    else:
+        return 'request not belong to POST'
+
+    # if NEED_EXPIRE:
+    #     from cleaner import add_to_expire_queue
+    #     add_to_expire_queue(key)
+    print download_url
+    return HttpResponse(json.dumps(download_url), content_type="application/json")

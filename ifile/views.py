@@ -29,6 +29,8 @@ def home(request):
 
 def upload_callback(request):
 
+    download_url = ''
+
     if not request.POST.has_key('key'):
         print 'request has not key attribute'
         logging.debug('request has not key attribute')

@@ -1,0 +1,8 @@
+DEBUG views.upload_callback Line:33upload_callback start
+DEBUG views.upload_callback Line:39request has not key attribute
+DEBUG views.upload_callback Line:47request not belong to POST
+DEBUG views.upload_callback Line:53download_url: 
+DEBUG views.upload_callback Line:33upload_callback start
+DEBUG views.upload_callback Line:39request has not key attribute
+DEBUG views.upload_callback Line:47request not belong to POST
+DEBUG views.upload_callback Line:53download_url: 

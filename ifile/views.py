@@ -29,6 +29,9 @@ def home(request):
 
 def upload_callback(request):
 
+    print 'upload_callback start'
+    logging.debug('upload_callback start')
+
     download_url = ''
 
     if not request.POST.has_key('key'):

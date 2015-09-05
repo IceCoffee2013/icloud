@@ -57,4 +57,20 @@ def upload_callback(request):
 def test_callback(request):
     print 'test callback start'
     logging.debug('test callback start')
-    return HttpResponse(json.dump('test callback'), content_type="application/json")
+    return HttpResponse(json.dumps('test callback'), content_type="application/json")
+
+def test_home(request):
+    t = loader.get_template("test.html")
+    c = Context()
+    return HttpResponse(t.render(c))
+
+def test_post(request):
+    print 'test_post'
+    if request.method == "POST":
+        content = request.POST['place']
+        print content
+
+    response_data = {}
+    response_data['result'] = 'failed'
+    response_data['message'] = 'You messed up'
+    return HttpResponse(json.dumps(response_data), content_type="application/json")

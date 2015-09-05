@@ -55,7 +55,10 @@ def upload_callback(request):
     print download_url
     logging.debug('download_url: ' + download_url)
 
-    return HttpResponse(json.dumps(download_url), content_type="application/json")
+    response_data = {}
+    response_data['download_url'] = download_url
+
+    return HttpResponse(json.dumps(response_data), content_type="application/json")
 
 def test_callback(request):
     print 'test callback start'

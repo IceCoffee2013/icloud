@@ -57,7 +57,8 @@ def upload_callback(request):
 def test_callback(request):
     print 'test callback start'
     logging.debug('test callback start')
-    return HttpResponse(json.dumps('test callback'), content_type="application/json")
+    result = {"success":0,"key":"null","hash":"null","message":"文件上传失败,请重新上传."}
+    return HttpResponse(json.dumps(result), content_type="application/json")
 
 def test_home(request):
     t = loader.get_template("test.html")

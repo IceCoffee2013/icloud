@@ -6,6 +6,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.template import loader, Context
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from ifile.config import BUCKET_NAME, CALLBACK_URL, Q_DOMAIN
 from q import qiniu, ACCESS_KEY, SECRET_KEY
 
@@ -28,6 +29,7 @@ def home(request):
     c = Context({'up_token': up_token})
     return HttpResponse(t.render(c))
 
+@csrf_exempt
 def upload_callback(request):
 
     print 'upload_callback start'
@@ -76,3 +78,4 @@ def test_post(request):
     response_data['result'] = 'failed'
     response_data['message'] = 'You messed up'
     return HttpResponse(json.dumps(response_data), content_type="application/json")
+

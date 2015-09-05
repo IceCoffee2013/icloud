@@ -7,7 +7,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'ifile.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    url(r'^callback/', 'ifile.views.test_callback'),
+    url(r'^callback/', 'ifile.views.upload_callback'),
     url(r'^admin/', include(admin.site.urls)),
 
 )

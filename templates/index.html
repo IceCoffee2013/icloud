@@ -67,7 +67,7 @@
 
     <script type="text/x-template" id="result-panel-tmpl">
         <div id="qrcode-container" class="qrcode"></div>
-        <input type="text" class="download-url" value="${download_url}" readonly="readonly"  />
+        <input type="text" id="display_url" class="download-url" value="${download_url}" readonly="readonly" onclick="select_url()"/>
     </script>
 
     <script type="text/javascript">
@@ -153,6 +153,12 @@
                 });
             }
         });
+
+        function select_url(){
+            if (document.getElementById("display_url").focus) {
+                document.getElementById("display_url").select();
+            }
+        }
 
     </script>
     <script type="text/javascript">

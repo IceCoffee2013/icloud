@@ -1,0 +1,55 @@
+.logo {
+    display: block;
+    width: 80px;
+    margin: 30px auto;
+}
+
+#dropzone.dropzone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+}
+
+.qrcode {
+    /*position: absolute;*/
+    top: 75px;
+    right: 100px;
+}
+
+.download-url {
+    width: 700px;
+    height: 50px;
+    /*position: absolute;*/
+    left: 40px;
+    bottom: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+/*#dropzone.success .dz-details {*/
+    /*top: 50px;*/
+    /*left: 100px;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+/*}*/
+
+/*#dropzone.success .dz-details img {*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+/*}*/
+
+/*#dropzone.success .dz-filename span {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    /*width: 150px;*/
+    /*height: 10px;*/
+/*}*/

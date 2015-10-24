@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^callback', 'ifile.views.upload_callback'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^test/', 'ifile.views.test_home'),
-    url(r'^search/', 'ifile.views.test_post')
+    url(r'^search/', 'ifile.views.test_post'),
+    url(r'^demo/', 'ifile.views.demo')
 )

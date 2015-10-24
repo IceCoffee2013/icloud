@@ -25,7 +25,7 @@ def home(request):
     # }
     # up_token = auth.upload_token(BUCKET_NAME, key=None, policy=policy)
 
-    t = loader.get_template("index.html")
+    t = loader.get_template("demo.html")
     c = Context({'up_token': up_token})
     return HttpResponse(t.render(c))
 
@@ -82,3 +82,20 @@ def test_post(request):
     response_data['message'] = 'You messed up'
     return HttpResponse(json.dumps(response_data), content_type="application/json")
 
+def demo(request):
+    policy = qiniu.rs.PutPolicy(BUCKET_NAME)
+    policy.callbackBody = 'key=$(x:key)'
+    policy.callbackUrl = CALLBACK_URL
+    up_token = policy.token()
+
+    # new sdk
+    # auth = qiniu.Auth(ACCESS_KEY, SECRET_KEY)
+    # policy = {
+    #     'callbackUrl' : 'key=$(x:key)',
+    #     'callbackBody' : CALLBACK_URL,
+    # }
+    # up_token = auth.upload_token(BUCKET_NAME, key=None, policy=policy)
+
+    t = loader.get_template("index.html")
+    c = Context({'up_token': up_token})
+    return HttpResponse(t.render(c))

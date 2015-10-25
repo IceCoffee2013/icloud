@@ -1,17 +1,4 @@
-DEBUG utils.execute Line:89(0.004) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
-DEBUG utils.execute Line:89(0.000) QUERY = u'BEGIN' - PARAMS = (); args=None
-DEBUG schema.execute Line:102CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
-DEBUG utils.execute Line:89(0.001) QUERY = u'CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL)' - PARAMS = (); args=None
-DEBUG utils.execute Line:89(0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
-WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
-  return _trans.activate(language)
-
-DEBUG utils.execute Line:89(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
-DEBUG utils.execute Line:89(0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
-WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
-  return _trans.activate(language)
-
-DEBUG utils.execute Line:89(0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+DEBUG utils.execute Line:89(0.003) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
 DEBUG utils.execute Line:89(0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
 WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
   return _trans.activate(language)

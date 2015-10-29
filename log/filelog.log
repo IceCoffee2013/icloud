@@ -1,5 +1,145 @@
-DEBUG utils.execute Line:89(0.003) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
-DEBUG utils.execute Line:89(0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+WARNING syncdb.handle Line:24/Library/Python/2.7/site-packages/django/core/management/commands/syncdb.py:24: RemovedInDjango19Warning: The syncdb command will be removed in Django 1.9
+  warnings.warn("The syncdb command will be removed in Django 1.9", RemovedInDjango19Warning)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SHOW FULL TABLES; args=None
+DEBUG schema.execute Line:102CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); (params None)
+DEBUG utils.execute Line:89(0.015) CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=[u'django_migrations']
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG utils.execute Line:89(0.000) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) SET foreign_key_checks=0; args=None
+DEBUG utils.execute Line:89(0.000) SET foreign_key_checks=1; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET foreign_key_checks=0; args=None
+DEBUG utils.execute Line:89(0.000) SET foreign_key_checks=1; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET foreign_key_checks=0; args=None
+DEBUG utils.execute Line:89(0.000) SET foreign_key_checks=1; args=None
+DEBUG schema.execute Line:102CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); (params None)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.011) CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); args=None
+DEBUG utils.execute Line:89(0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=[u'django_content_type']
+DEBUG schema.execute Line:102ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_45f3b1d93ec8c61c_uniq` UNIQUE (`app_label`, `model`); (params [])
+DEBUG utils.execute Line:89(0.015) ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_45f3b1d93ec8c61c_uniq` UNIQUE (`app_label`, `model`); args=[]
+DEBUG utils.execute Line:89(0.000) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0001_initial', '2015-10-29 03:36:08.293077'); args=['contenttypes', u'0001_initial', u'2015-10-29 03:36:08.293077']
+DEBUG schema.execute Line:102CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL, UNIQUE (`content_type_id`, `codename`)); (params None)
+DEBUG utils.execute Line:89(0.016) CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL, UNIQUE (`content_type_id`, `codename`)); args=None
+DEBUG utils.execute Line:89(0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=[u'auth_permission']
+DEBUG schema.execute Line:102CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); (params None)
+DEBUG utils.execute Line:89(0.013) CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group'; args=[u'auth_group']
+DEBUG schema.execute Line:102CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL, UNIQUE (`group_id`, `permission_id`)); (params None)
+DEBUG utils.execute Line:89(0.015) CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL, UNIQUE (`group_id`, `permission_id`)); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=[u'auth_group_permissions']
+DEBUG schema.execute Line:102CREATE TABLE `auth_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NOT NULL, `is_superuser` bool NOT NULL, `username` varchar(30) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(75) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL); (params None)
+DEBUG utils.execute Line:89(0.015) CREATE TABLE `auth_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NOT NULL, `is_superuser` bool NOT NULL, `username` varchar(30) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(75) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL); args=None
+DEBUG utils.execute Line:89(0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=[u'auth_user']
+DEBUG schema.execute Line:102CREATE TABLE `auth_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL, UNIQUE (`user_id`, `group_id`)); (params None)
+DEBUG utils.execute Line:89(0.013) CREATE TABLE `auth_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL, UNIQUE (`user_id`, `group_id`)); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_groups'; args=[u'auth_user_groups']
+DEBUG schema.execute Line:102CREATE TABLE `auth_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL, UNIQUE (`user_id`, `permission_id`)); (params None)
+DEBUG utils.execute Line:89(0.014) CREATE TABLE `auth_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL, UNIQUE (`user_id`, `permission_id`)); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_user_permissions'; args=[u'auth_user_user_permissions']
+DEBUG schema.execute Line:102ALTER TABLE `auth_permission` ADD CONSTRAINT `auth__content_type_id_508cf46651277a81_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params [])
+DEBUG utils.execute Line:89(0.024) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth__content_type_id_508cf46651277a81_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permission_group_id_689710a9a73b7457_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params [])
+DEBUG utils.execute Line:89(0.018) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permission_group_id_689710a9a73b7457_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group__permission_id_1f49ccbbdc69d2fc_fk_auth_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params [])
+DEBUG utils.execute Line:89(0.021) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group__permission_id_1f49ccbbdc69d2fc_fk_auth_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_4b5ed4ffdb8fd9b0_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params [])
+DEBUG utils.execute Line:89(0.019) ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_4b5ed4ffdb8fd9b0_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_group_id_33ac548dcf5f8e37_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params [])
+DEBUG utils.execute Line:89(0.019) ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_group_id_33ac548dcf5f8e37_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissi_user_id_7f0938558328534a_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params [])
+DEBUG utils.execute Line:89(0.021) ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissi_user_id_7f0938558328534a_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_u_permission_id_384b62483d7071f0_fk_auth_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params [])
+DEBUG utils.execute Line:89(0.017) ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_u_permission_id_384b62483d7071f0_fk_auth_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0001_initial', '2015-10-29 03:36:08.562565'); args=['auth', u'0001_initial', u'2015-10-29 03:36:08.562565']
+DEBUG schema.execute Line:102CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); (params None)
+DEBUG utils.execute Line:89(0.013) CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=[u'django_admin_log']
+DEBUG schema.execute Line:102ALTER TABLE `django_admin_log` ADD CONSTRAINT `djang_content_type_id_697914295151027a_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params [])
+DEBUG utils.execute Line:89(0.024) ALTER TABLE `django_admin_log` ADD CONSTRAINT `djang_content_type_id_697914295151027a_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=[]
+DEBUG schema.execute Line:102ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_52fdd58701c5f563_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params [])
+DEBUG utils.execute Line:89(0.019) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_52fdd58701c5f563_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2015-10-29 03:36:08.640899'); args=['admin', u'0001_initial', u'2015-10-29 03:36:08.640899']
+DEBUG schema.execute Line:102ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; (params [])
+DEBUG utils.execute Line:89(0.016) ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; args=[]
+DEBUG schema.execute Line:102ALTER TABLE `django_content_type` DROP COLUMN `name` CASCADE; (params [])
+DEBUG utils.execute Line:89(0.017) ALTER TABLE `django_content_type` DROP COLUMN `name` CASCADE; args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0002_remove_content_type_name', '2015-10-29 03:36:08.727899'); args=['contenttypes', u'0002_remove_content_type_name', u'2015-10-29 03:36:08.727899']
+DEBUG schema.execute Line:102ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; (params [])
+DEBUG utils.execute Line:89(0.011) ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0002_alter_permission_name_max_length', '2015-10-29 03:36:08.766424'); args=['auth', u'0002_alter_permission_name_max_length', u'2015-10-29 03:36:08.766424']
+DEBUG schema.execute Line:102ALTER TABLE `auth_user` MODIFY `email` varchar(254) NOT NULL; (params [])
+DEBUG utils.execute Line:89(0.012) ALTER TABLE `auth_user` MODIFY `email` varchar(254) NOT NULL; args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0003_alter_user_email_max_length', '2015-10-29 03:36:08.797139'); args=['auth', u'0003_alter_user_email_max_length', u'2015-10-29 03:36:08.797139']
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0004_alter_user_username_opts', '2015-10-29 03:36:08.820864'); args=['auth', u'0004_alter_user_username_opts', u'2015-10-29 03:36:08.820864']
+DEBUG schema.execute Line:102ALTER TABLE `auth_user` MODIFY `last_login` datetime(6) NULL; (params [])
+DEBUG utils.execute Line:89(0.016) ALTER TABLE `auth_user` MODIFY `last_login` datetime(6) NULL; args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0005_alter_user_last_login_null', '2015-10-29 03:36:08.861311'); args=['auth', u'0005_alter_user_last_login_null', u'2015-10-29 03:36:08.861311']
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0006_require_contenttypes_0002', '2015-10-29 03:36:08.864663'); args=['auth', u'0006_require_contenttypes_0002', u'2015-10-29 03:36:08.864663']
+DEBUG schema.execute Line:102CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); (params None)
+DEBUG utils.execute Line:89(0.012) CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); args=None
+DEBUG utils.execute Line:89(0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'django_session'; args=[u'django_session']
+DEBUG schema.execute Line:102CREATE INDEX `django_session_de54fa62` ON `django_session` (`expire_date`); (params [])
+DEBUG utils.execute Line:89(0.015) CREATE INDEX `django_session_de54fa62` ON `django_session` (`expire_date`); args=[]
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('sessions', '0001_initial', '2015-10-29 03:36:08.904479'); args=['sessions', u'0001_initial', u'2015-10-29 03:36:08.904479']
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'logentry' AND `django_content_type`.`app_label` = 'admin'); args=('logentry', 'admin')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'logentry' AND `django_content_type`.`app_label` = 'admin'); args=('logentry', 'admin')
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('admin', 'logentry'); args=['admin', 'logentry']
+DEBUG utils.execute Line:89(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON ( `auth_permission`.`content_type_id` = `django_content_type`.`id` ) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+DEBUG utils.execute Line:89(0.001) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add log entry', 1, 'add_logentry'), ('Can change log entry', 1, 'change_logentry'), ('Can delete log entry', 1, 'delete_logentry'); args=(u'Can add log entry', 1, u'add_logentry', u'Can change log entry', 1, u'change_logentry', u'Can delete log entry', 1, u'delete_logentry')
+DEBUG utils.execute Line:89(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'permission' AND `django_content_type`.`app_label` = 'auth'); args=('permission', 'auth')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'permission' AND `django_content_type`.`app_label` = 'auth'); args=('permission', 'auth')
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('auth', 'permission'); args=['auth', 'permission']
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'group' AND `django_content_type`.`app_label` = 'auth'); args=('group', 'auth')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'group' AND `django_content_type`.`app_label` = 'auth'); args=('group', 'auth')
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('auth', 'group'); args=['auth', 'group']
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'user' AND `django_content_type`.`app_label` = 'auth'); args=('user', 'auth')
+DEBUG utils.execute Line:89(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'user' AND `django_content_type`.`app_label` = 'auth'); args=('user', 'auth')
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('auth', 'user'); args=['auth', 'user']
+DEBUG utils.execute Line:89(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON ( `auth_permission`.`content_type_id` = `django_content_type`.`id` ) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3, 4)
+DEBUG utils.execute Line:89(0.001) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add permission', 2, 'add_permission'), ('Can change permission', 2, 'change_permission'), ('Can delete permission', 2, 'delete_permission'), ('Can add group', 3, 'add_group'), ('Can change group', 3, 'change_group'), ('Can delete group', 3, 'delete_group'), ('Can add user', 4, 'add_user'), ('Can change user', 4, 'change_user'), ('Can delete user', 4, 'delete_user'); args=(u'Can add permission', 2, u'add_permission', u'Can change permission', 2, u'change_permission', u'Can delete permission', 2, u'delete_permission', u'Can add group', 3, u'add_group', u'Can change group', 3, u'change_group', u'Can delete group', 3, u'delete_group', u'Can add user', 4, u'add_user', u'Can change user', 4, u'change_user', u'Can delete user', 4, u'delete_user')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'contenttype' AND `django_content_type`.`app_label` = 'contenttypes'); args=('contenttype', 'contenttypes')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'contenttype' AND `django_content_type`.`app_label` = 'contenttypes'); args=('contenttype', 'contenttypes')
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('contenttypes', 'contenttype'); args=['contenttypes', 'contenttype']
+DEBUG utils.execute Line:89(0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON ( `auth_permission`.`content_type_id` = `django_content_type`.`id` ) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+DEBUG utils.execute Line:89(0.000) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add content type', 5, 'add_contenttype'), ('Can change content type', 5, 'change_contenttype'), ('Can delete content type', 5, 'delete_contenttype'); args=(u'Can add content type', 5, u'add_contenttype', u'Can change content type', 5, u'change_contenttype', u'Can delete content type', 5, u'delete_contenttype')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'session' AND `django_content_type`.`app_label` = 'sessions'); args=('session', 'sessions')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'session' AND `django_content_type`.`app_label` = 'sessions'); args=('session', 'sessions')
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('sessions', 'session'); args=['sessions', 'session']
+DEBUG utils.execute Line:89(0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON ( `auth_permission`.`content_type_id` = `django_content_type`.`id` ) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+DEBUG utils.execute Line:89(0.000) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add session', 6, 'add_session'), ('Can change session', 6, 'change_session'), ('Can delete session', 6, 'delete_session'); args=(u'Can add session', 6, u'add_session', u'Can change session', 6, u'change_session', u'Can delete session', 6, u'delete_session')
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+DEBUG utils.execute Line:89(0.000) SELECT (1) AS `a` FROM `auth_user` LIMIT 1; args=()
+DEBUG utils.execute Line:89(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'langley'; args=(u'langley',)
+DEBUG utils.execute Line:89(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'langley'; args=(u'langley',)
+DEBUG utils.execute Line:89(0.000) INSERT INTO `auth_user` (`password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES ('pbkdf2_sha256$20000$qPexjxaa5J3m$O10r3EV0umW0aSW+yi0r4ZIUEY5AEW244bNOBlzHQLU=', NULL, 1, 'langley', '', '', '295046974@qq.com', 1, 1, '2015-10-29 03:37:15.896134'); args=[u'pbkdf2_sha256$20000$qPexjxaa5J3m$O10r3EV0umW0aSW+yi0r4ZIUEY5AEW244bNOBlzHQLU=', None, True, u'langley', u'', u'', u'295046974@qq.com', True, True, u'2015-10-29 03:37:15.896134']
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
 WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
   return _trans.activate(language)
 

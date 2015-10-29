@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ifile',
+    'doora',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -61,8 +62,14 @@ WSGI_APPLICATION = 'icloud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', # mysql 可以改成 'postgresql_psycopg2', 'postgresql', 'sqlite3' or 'oracle'.
+        'NAME': 'icloud',                      # 数据库名
+        'USER': 'root',                      # sqlite3 不使用此配置
+        'PASSWORD': '12345',                  # sqlite3 不使用此配置
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

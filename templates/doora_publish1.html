@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="http://ieltsbroapp.sinaapp.com/css/jquery.mobile-1.4.1.css">
+    <link rel="stylesheet" type="text/css" href="http://ieltsbroapp.sinaapp.com/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://ieltsbroapp.sinaapp.com/css/global.css">
+    <script src="http://ieltsbroapp.sinaapp.com/js/script.js" type="text/javascript"></script>
+</head>
+<body>
+<div data-role="page" class="page_share1" data-title="分享回忆" data-theme="z"  data-dom-cache="false">
+        <div data-role="header" data-position="fixed" data-theme="z"  data-id="header">
+         <a href="/doora"   data-transition="pop" data-direction="reverse" class="back ui-btn-left ui-btn ui-btn-inline"> <i class="fa fa-angle-left "></i></a>
+         <h1>分享回忆</h1>
+         <a href="/doora/publish" id="next" class="back ui-btn-right ui-btn ui-btn-inline">下一步</a>
+</div><!-- /header -->
+{#        <div data-role="content" data-theme="z">#}
+{#        <div id="line">#}
+{#        <ul class="line_text">#}
+{#        <li class="current">选择考场</li>#}
+{#        <li>分享考题</li>#}
+{#        <li>频次投票</li>#}
+{#        <li>分享完成</li>#}
+{#        </ul>#}
+{#        <ul class="line_graph">#}
+{#        	<li></li>#}
+{#        	<li></li>#}
+{#        	<li></li>#}
+{#        	<li class="last-child"></li>#}
+{#        </ul>#}
+{#           <ul class="line_graph line_focus">#}
+{#        	<li class="last-child"></li>#}
+{#        </ul>#}
+{#        </div> <!-- /line -->#}
+{#        <div id="desc"><strong>分享回忆&#65292;人品暴增!</strong></div>#}
+        <ul class="module">
+      <li><span>所在考场</span>
+       <a href="http://ieltsbroapp.sinaapp.com/www/location" rel="external" id="set_location">
+         四川外国语大学              <i class="fa fa-angle-right "></i></a>
+       </li>
+     <li class="last-child">
+     	<span>考试时间</span>
+     	<a href="http://ieltsbroapp.sinaapp.com/www/date" id="set_testtime">设置<i class="fa fa-angle-right "></i></a>
+     </li>
+    </ul>
+        </div><!-- /content -->
+<script>
+	$('.page_share1').off('click','#set_location, #set_testtime');
+	$('.page_share1').on('click','#set_location, #set_testtime',function(event){
+		event.preventDefault();
+		localStorage.setItem("ib_return_url",'http://ieltsbroapp.sinaapp.com/www/share1');
+		$.mobile.changePage($(this).attr('href'));
+	});
+$( '.page_share1' ).on( "pagebeforeshow", function() {
+	var testtime = localStorage.getItem("ib_testtime");
+	console.log(testtime);
+	if(typeof(testtime) == 'string' && testtime !== ''){
+		$(this).find('#set_testtime').text(testtime);
+	}
+});
+$('.page_share1').on('vclick','#next',function(event){
+	event.preventDefault();
+	var total = 0;
+	 if(total>5){
+		show_mask('分享过于频繁，请稍后再试');
+		return;
+	}
+	 if(!$.cookie('ib_location_name')){
+		show_mask('没有选择考场');
+		return;
+	}
+	 if(!localStorage.getItem('ib_testtime_unix')){
+		show_mask('没有选择考试日期');
+		return;
+	}
+	$.mobile.changePage($(this).attr('href'),{transition: "slide"});
+});
+</script>
+</div>
+</body>
+</html>
+

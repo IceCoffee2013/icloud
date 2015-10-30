@@ -1,0 +1,23 @@
+{% extends 'doora_home.html' %}
+
+{% block content %}
+
+    {% if infos %}
+        {% for info in infos %}
+            <li>
+                <a href="{{ info.get_absolute_url }}" data-transition="pop">
+                    <img src="http://tp3.sinaimg.cn/1751453250/180/5727909594/0">
+
+                    <h2>{{ info.user }}</h2>
+
+                    <p class="time">{{ info.addTime }}</p>
+
+                    <p class="content">{{ info.content }}</p>
+
+                    <p class="position">{{ info.city }}</p>
+                </a>
+            </li>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

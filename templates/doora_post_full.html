@@ -1,0 +1,17 @@
+{% extends 'doora_post.html' %}
+
+{% block content %}
+
+    {% if post %}
+        <div data-role="content" class="ibcontent" data-theme="y">
+            <img src="http://tp2.sinaimg.cn/1850358517/180/5735397963/0" class="face" alt="">
+
+            <h2 class="username">{{ post.user }}</h2>
+
+            <div class="time">{{ post.addTime }}</div>
+            <div class="position">{{ post.city }}</div>
+            <div class="content">{{ post.content }}</div>
+        </div>
+    {% endif %}
+
+{% endblock %}

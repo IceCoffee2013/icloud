@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>   
+
+    <link rel="stylesheet" type="text/css" href="http://ieltsbroapp.sinaapp.com/css/jquery.mobile-1.4.1.css">
+    <link rel="stylesheet" type="text/css" href="http://ieltsbroapp.sinaapp.com/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://ieltsbroapp.sinaapp.com/css/global.css">
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+</head>
+<body>
+<div data-role="page" class="page_home"  data-title="雅思哥" data-theme="z" data-dom-cache="true" id="home">
+        <div data-role="header" data-position="fixed" class="ui-state-persist" data-theme="z" data-id="page_home_header"  data-tap-toggle="false">
+                  <a href="#" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline select_area">选择城市</a>
+                     <h1>Doora</h1>
+           <a href="/doora/publish" data-transition="pop" class="ui-btn-right ui-btn ui-btn-inline icon-edit "></a>
+        </div><!-- /header -->
+        <div data-role="content"  data-iscroll="" >
+            
+         <div class="iscroll-pulldown" id="iscroll-pulldown">
+          <span class="iscroll-pull-icon"></span><span class="iscroll-pull-label" data-iscroll-loading-text="载入中..." data-iscroll-pulled-text="松开刷新">下拉价值更多</span>
+        </div>
+            <ul data-role="listview" data-icon="false" id="home_listview">
+{#                     <li>#}
+{# <a href="http://ieltsbroapp.sinaapp.com/www/content/4317" data-transition="pop">#}
+{# <img src="http://tp2.sinaimg.cn/1850358517/180/5735397963/0">#}
+{# <h2>叉叉嘴角微微翘</h2>#}
+{# <p class="time">08-31 10:44</p>#}
+{# <p class="content">p1name ,major ,why ,handwriting #}
+{#p2a person appear</p>#}
+{# <p class="position">东南大学</p>#}
+{#</a>#}
+{#</li>	    #}
+{#           <li>#}
+{# <a href="http://ieltsbroapp.sinaapp.com/www/content/4311" data-transition="pop">#}
+{# <img src="http://tp3.sinaimg.cn/1751453250/180/5727909594/0">#}
+{# <h2>请叫我客户大人</h2>#}
+{# <p class="time">08-25 12:39</p>#}
+{# <p class="content">8月25日考的#}
+{#part1:#}
+{#name,major,course,老师还是同学更重要math,spo</p>#}
+{# <p class="position">四川大学</p>#}
+{#</a>#}
+{#</li>#}
+
+{% block content %}
+    Need to be filled.
+{% endblock content %}
+
+{#          append here      #}
+             </ul>
+            
+             <div class="iscroll-pullup">
+          <span class="iscroll-pull-icon"></span><span class="iscroll-pull-label" data-iscroll-loading-text="载入中..." data-iscroll-pulled-text="加载更多">上拉加载更多</span>
+        </div>
+		        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed" data-theme="z" iconpos="top" data-id="footer" data-tap-toggle="false">
+            <div data-role="navbar">
+               <ul>
+                    <li><a href="/doora" class="home ui-btn-icon-top icon-home ui-btn-active ui-state-persist">租房</a></li>
+{#                    <li><a href="http://ieltsbroapp.sinaapp.com/www/item_list" class="hp ui-btn-icon-top icon-list" data-transition="slide">高频清单</a></li>#}
+{#                    <li><a href="http://ieltsbroapp.sinaapp.com/www/video" class="ls ui-btn-icon-top icon-radio" data-transition="slide">80128</a></li>#}
+                    <li><a href="#" class="setting ui-btn-icon-top icon-user" data-transition="slide">我</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+ <script>
+$(".page_home").off('pagecreate');
+$('.page_home').on("pagecreate", function() {
+      var pullDownGeneratedCount = 0,
+      pullUpGeneratedCount = 0,
+      listSelector = "div.page_home #home_listview",
+      lastItemSelector = listSelector + " > li:last-child",
+	  json_url = server_url+ 'index.php/json/index/?callback=?',
+	  pages = 1;
+$(".page_home").off('click', 'a.return');
+$('.page_home').on('click','a.return',function(event){
+	$.cookie('index_location_id',null,{path:'/'});
+	$.mobile.changePage('http://ieltsbroapp.sinaapp.com/',  {reloadPage:true, transition: "pop", reverse:true});
+});
+$(".page_home").off('click', 'a.select_area');
+$('.page_home').on('click','a.select_area',function(event){
+	 localStorage.setItem("ib_return_url",'/');
+	$.mobile.changePage('http://ieltsbroapp.sinaapp.com/www/location',{transition: "pop"} );
+});
+  function gotPullDownData(event, data) {
+	   jQuery.getJSON( json_url , {lim:20} , function( json ){
+	var newContent= $('#home_tmpl').tmpl(json);
+ 	$(listSelector).html(newContent).listview("refresh"); 
+   	data.iscrollview.refresh(); 
+	});
+    }
+  function gotPullUpData(event, data) {
+     jQuery.getJSON( json_url , {lim:20,off:pages*20} , function( json )
+	{
+		if(json !='empty')
+		{
+			var newContent= $('#home_tmpl').tmpl(json);
+			$(listSelector).append(newContent).listview("refresh");  // Prepend new content and refresh listview
+			pages = pages+1;
+	   	}
+		else
+			show_mask('没有更多了');
+		data.iscrollview.refresh(); 
+	});
+
+   }
+  function onPullDown (event, data) { 
+    setTimeout(function fakeRetrieveDataTimeout() {
+      gotPullDownData(event, data);
+      }, 
+      1000); 
+    }
+  function onPullUp (event, data) { 
+    setTimeout(function fakeRetrieveDataTimeout() {
+      gotPullUpData(event, data);
+      }, 
+      1000); 
+    }
+  $('div.page_home').on("pageinit", 
+    function bindPullPagePullCallbacks(event) {
+      $(".iscroll-wrapper", this).bind( {
+      iscroll_onpulldown : onPullDown,
+      iscroll_onpullup   : onPullUp,
+      } );
+    } );  
+});
+</script>
+
+<script id="home_tmpl" type="text/x-jquery-tmpl">
+<li>
+ <a href="http://ieltsbroapp.sinaapp.com/www/content/${id}" data-transition="pop">
+ <img src="${face}" alt="">
+ <h2>${nick}</h2>
+ <p class="time">${post_time}</p>
+ <p class="content">${content}</p>
+ <p class="position">${location}</p>
+</a>
+</li>
+</script> 
+</div></body>
+</html>
+

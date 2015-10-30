@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'ifile',
     'doora',
+    'django_summernote',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,7 +85,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 # APPEND_SLASH=False   # slash issue
 

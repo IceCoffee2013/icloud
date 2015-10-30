@@ -11,5 +11,10 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^test/', 'ifile.views.test_home'),
     url(r'^search/', 'ifile.views.test_post'),
-    url(r'^demo/', 'ifile.views.demo')
+    url(r'^demo/', 'ifile.views.demo'),
+    url(r'^doora/$', 'doora.views.home'),
+    url(r'^doora/publish', 'doora.views.publish'),
+    url(r'^doora/submit', 'doora.views.submit'),
+    url(r'^summernote/', include('django_summernote.urls')),
+    url(r'^post/(?P<pid>\d+)/', 'doora.views.show_post'),
 )

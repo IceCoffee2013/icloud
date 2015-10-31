@@ -15,13 +15,13 @@ from doora.models import Rent, RentForm
 def home(request):
     infos = Rent.objects.all()
     for info in infos:
-        print  info.addTime
+        # print  info.addTime
         # tmpTime = time.strftime(info.addTime, "%Y年%m月%d日 %H:%M")
         info.addTime = info.addTime.strftime("%m-%d %H:%M")
         # info.addTime = time.strftime("%m-%d %H:%M")
         # info.addTime.strftime("%m-%d %H:%M")
-        print info.addTime
-        print time.strftime("%m-%d %H:%M")
+        # print info.addTime
+        # print time.strftime("%m-%d %H:%M")
     t = loader.get_template("doora_flow.html")
     c = Context({'infos' : infos})
     return HttpResponse(t.render(c))
@@ -73,3 +73,30 @@ def show_post(request, pid):
     t = loader.get_template("doora_post_full.html")
     c = Context({'post' : post})
     return HttpResponse(t.render(c))
+
+
+def location(request):
+    t = loader.get_template("doora_location.html")
+    c = Context({})
+    return HttpResponse(t.render(c))
+
+
+def search(request):
+    if 'city' in request.GET:
+        key = request.GET['city']
+        # print 'key: ' + key
+        if key == '0':
+            results = Rent.objects.all()
+            # print 'all'
+        else:
+            results = Rent.objects.filter(city__icontains=key)
+
+        for info in results:
+            info.addTime = info.addTime.strftime("%m-%d %H:%M")
+
+        t = loader.get_template("doora_flow.html")
+        c = Context({'infos': results})
+        return HttpResponse(t.render(c))
+    else:
+        msg = 'You submitted an empty form.'
+        return HttpResponse(msg)

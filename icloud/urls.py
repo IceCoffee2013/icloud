@@ -17,4 +17,6 @@ urlpatterns = patterns('',
     url(r'^doora/submit', 'doora.views.submit'),
     url(r'^summernote/', include('django_summernote.urls')),
     url(r'^post/(?P<pid>\d+)/', 'doora.views.show_post'),
+    url(r'^location/', 'doora.views.location'),
+    url(r'^search', 'doora.views.search'),
 )

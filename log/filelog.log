@@ -4,3 +4,433 @@ DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
 DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
 DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
 DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('你好', '小明', '阿德莱德', NULL, '123', '2015-10-31 16:01:48.987293'); args=[u'\u4f60\u597d', u'\u5c0f\u660e', u'\u963f\u5fb7\u83b1\u5fb7', None, u'123', u'2015-10-31 16:01:48.987293']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = '你好', `user` = '小明', `city` = '阿德莱德', `date` = NULL, `content` = '123', `addTime` = '2015-10-31 16:01:48.987293' WHERE `doora_rent`.`id` = 9; args=(u'\u4f60\u597d', u'\u5c0f\u660e', u'\u963f\u5fb7\u83b1\u5fb7', u'123', u'2015-10-31 16:01:48.987293', 9)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 9; args=(9,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('你好', '小明爸爸', '墨尔本', NULL, '123', '2015-10-31 16:03:43.726738'); args=[u'\u4f60\u597d', u'\u5c0f\u660e\u7238\u7238', u'\u58a8\u5c14\u672c', None, u'123', u'2015-10-31 16:03:43.726738']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = '你好', `user` = '小明爸爸', `city` = '墨尔本', `date` = NULL, `content` = '123', `addTime` = '2015-10-31 16:03:43.726738' WHERE `doora_rent`.`id` = 10; args=(u'\u4f60\u597d', u'\u5c0f\u660e\u7238\u7238', u'\u58a8\u5c14\u672c', u'123', u'2015-10-31 16:03:43.726738', 10)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.002) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.004) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%国内%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u56fd\u5185%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+WARNING views.search Line:88/Users/Langley/Documents/PycharmProjects/icloud/doora/views.py:88: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  if key == '不限':
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%国内%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u56fd\u5185%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%不限%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u4e0d\u9650%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+WARNING views.search Line:88/Users/Langley/Documents/PycharmProjects/icloud/doora/views.py:88: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  if key == '不限':
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%不限%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u4e0d\u9650%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%不限%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u4e0d\u9650%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%0%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%0%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 10; args=(10,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('hi ', 'Tom', '悉尼', NULL, '请问请问', '2015-10-31 16:45:55.827123'); args=[u'hi ', u'Tom', u'\u6089\u5c3c', None, u'\u8bf7\u95ee\u8bf7\u95ee', u'2015-10-31 16:45:55.827123']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = 'hi ', `user` = 'Tom', `city` = '悉尼', `date` = NULL, `content` = '请问请问', `addTime` = '2015-10-31 16:45:55.827123' WHERE `doora_rent`.`id` = 11; args=(u'hi ', u'Tom', u'\u6089\u5c3c', u'\u8bf7\u95ee\u8bf7\u95ee', u'2015-10-31 16:45:55.827123', 11)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%其他%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u5176\u4ed6%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('hi ', 'sony', '墨尔本', NULL, '啊企鹅去', '2015-10-31 16:46:38.518800'); args=[u'hi ', u'sony', u'\u58a8\u5c14\u672c', None, u'\u554a\u4f01\u9e45\u53bb', u'2015-10-31 16:46:38.518800']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = 'hi ', `user` = 'sony', `city` = '墨尔本', `date` = NULL, `content` = '啊企鹅去', `addTime` = '2015-10-31 16:46:38.518800' WHERE `doora_rent`.`id` = 12; args=(u'hi ', u'sony', u'\u58a8\u5c14\u672c', u'\u554a\u4f01\u9e45\u53bb', u'2015-10-31 16:46:38.518800', 12)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%布里斯班%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u5e03\u91cc\u65af\u73ed%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('hi ', '请问请问', '墨尔本', NULL, '请问请问', '2015-10-31 16:47:05.799690'); args=[u'hi ', u'\u8bf7\u95ee\u8bf7\u95ee', u'\u58a8\u5c14\u672c', None, u'\u8bf7\u95ee\u8bf7\u95ee', u'2015-10-31 16:47:05.799690']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = 'hi ', `user` = '请问请问', `city` = '墨尔本', `date` = NULL, `content` = '请问请问', `addTime` = '2015-10-31 16:47:05.799690' WHERE `doora_rent`.`id` = 13; args=(u'hi ', u'\u8bf7\u95ee\u8bf7\u95ee', u'\u58a8\u5c14\u672c', u'\u8bf7\u95ee\u8bf7\u95ee', u'2015-10-31 16:47:05.799690', 13)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.002) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('驱蚊器', '请问', '布里斯班', NULL, '请问', '2015-10-31 16:47:40.911681'); args=[u'\u9a71\u868a\u5668', u'\u8bf7\u95ee', u'\u5e03\u91cc\u65af\u73ed', None, u'\u8bf7\u95ee', u'2015-10-31 16:47:40.911681']
+DEBUG utils.execute Line:89(0.002) UPDATE `doora_rent` SET `subject` = '驱蚊器', `user` = '请问', `city` = '布里斯班', `date` = NULL, `content` = '请问', `addTime` = '2015-10-31 16:47:40.911681' WHERE `doora_rent`.`id` = 14; args=(u'\u9a71\u868a\u5668', u'\u8bf7\u95ee', u'\u5e03\u91cc\u65af\u73ed', u'\u8bf7\u95ee', u'2015-10-31 16:47:40.911681', 14)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('1231', '123123', '墨尔本', NULL, '1231 ', '2015-10-31 16:48:41.060153'); args=[u'1231', u'123123', u'\u58a8\u5c14\u672c', None, u'1231 ', u'2015-10-31 16:48:41.060153']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = '1231', `user` = '123123', `city` = '墨尔本', `date` = NULL, `content` = '1231 ', `addTime` = '2015-10-31 16:48:41.060153' WHERE `doora_rent`.`id` = 15; args=(u'1231', u'123123', u'\u58a8\u5c14\u672c', u'1231 ', u'2015-10-31 16:48:41.060153', 15)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:48.702623'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:48.702623')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.002) SELECT `django_admin_log`.`id`, `django_admin_log`.`action_time`, `django_admin_log`.`user_id`, `django_admin_log`.`content_type_id`, `django_admin_log`.`object_id`, `django_admin_log`.`object_repr`, `django_admin_log`.`action_flag`, `django_admin_log`.`change_message`, `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_admin_log` INNER JOIN `auth_user` ON ( `django_admin_log`.`user_id` = `auth_user`.`id` ) LEFT OUTER JOIN `django_content_type` ON ( `django_admin_log`.`content_type_id` = `django_content_type`.`id` ) WHERE `django_admin_log`.`user_id` = 1 ORDER BY `django_admin_log`.`action_time` DESC LIMIT 10; args=(1,)
+DEBUG utils.execute Line:89(0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:51.223567'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:51.223567')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SELECT COUNT(*) AS `__count` FROM `doora_rent`; args=()
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC, `doora_rent`.`id` DESC; args=()
+DEBUG utils.execute Line:89(0.004) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:51.350018'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:51.350018')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:57.126298'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:57.126298')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SELECT COUNT(*) AS `__count` FROM `doora_rent`; args=()
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` IN (5, 6, 7) ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC, `doora_rent`.`id` DESC; args=(5, 6, 7)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:58.344319'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:58.344319')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SELECT COUNT(*) AS `__count` FROM `doora_rent`; args=()
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` IN (5, 6, 7) ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC, `doora_rent`.`id` DESC; args=(5, 6, 7)
+DEBUG utils.execute Line:89(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`model` = 'rent' AND `django_content_type`.`app_label` = 'doora'); args=('rent', 'doora')
+DEBUG utils.execute Line:89(0.001) INSERT INTO `django_admin_log` (`action_time`, `user_id`, `content_type_id`, `object_id`, `object_repr`, `action_flag`, `change_message`) VALUES ('2015-10-31 16:50:58.358208', 1, 7, '5', 'hi sony nanjing', 3, ''); args=[u'2015-10-31 16:50:58.358208', 1, 7, u'5', u'hi sony nanjing', 3, u'']
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_admin_log` (`action_time`, `user_id`, `content_type_id`, `object_id`, `object_repr`, `action_flag`, `change_message`) VALUES ('2015-10-31 16:50:58.364453', 1, 7, '6', '123123 1231 12', 3, ''); args=[u'2015-10-31 16:50:58.364453', 1, 7, u'6', u'123123 1231 12', 3, u'']
+DEBUG utils.execute Line:89(0.000) INSERT INTO `django_admin_log` (`action_time`, `user_id`, `content_type_id`, `object_id`, `object_repr`, `action_flag`, `change_message`) VALUES ('2015-10-31 16:50:58.365759', 1, 7, '7', '1231 12312 1231', 3, ''); args=[u'2015-10-31 16:50:58.365759', 1, 7, u'7', u'1231 12312 1231', 3, u'']
+DEBUG utils.execute Line:89(0.000) DELETE FROM `doora_rent` WHERE `doora_rent`.`id` IN (5, 6, 7); args=(5, 6, 7)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:58.375353'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:58.375353')
+DEBUG utils.execute Line:89(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SELECT COUNT(*) AS `__count` FROM `doora_rent`; args=()
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC, `doora_rent`.`id` DESC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:50:58.444167'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:50:58.444167')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:51:24.513056'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:51:24.513056')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SELECT COUNT(*) AS `__count` FROM `doora_rent`; args=()
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC, `doora_rent`.`id` DESC; args=()
+DEBUG utils.execute Line:89(0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 16:51:24.601540'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 16:51:24.601540')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%堪培拉%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u582a\u57f9\u62c9%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%阿德莱德%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u963f\u5fb7\u83b1\u5fb7%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('hi ', 'Tom', '堪培拉', NULL, '随碟附送', '2015-10-31 16:52:30.581316'); args=[u'hi ', u'Tom', u'\u582a\u57f9\u62c9', None, u'\u968f\u789f\u9644\u9001', u'2015-10-31 16:52:30.581316']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = 'hi ', `user` = 'Tom', `city` = '堪培拉', `date` = NULL, `content` = '随碟附送', `addTime` = '2015-10-31 16:52:30.581316' WHERE `doora_rent`.`id` = 16; args=(u'hi ', u'Tom', u'\u582a\u57f9\u62c9', u'\u968f\u789f\u9644\u9001', u'2015-10-31 16:52:30.581316', 16)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%堪培拉%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u582a\u57f9\u62c9%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 9; args=(9,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 9; args=(9,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 9; args=(9,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 10; args=(10,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.002) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('xx', 'xasda', '墨尔本', NULL, 'asdad', '2015-10-31 23:00:30.098596'); args=[u'xx', u'xasda', u'\u58a8\u5c14\u672c', None, u'asdad', u'2015-10-31 23:00:30.098596']
+DEBUG utils.execute Line:89(0.000) UPDATE `doora_rent` SET `subject` = 'xx', `user` = 'xasda', `city` = '墨尔本', `date` = NULL, `content` = 'asdad', `addTime` = '2015-10-31 23:00:30.098596' WHERE `doora_rent`.`id` = 17; args=(u'xx', u'xasda', u'\u58a8\u5c14\u672c', u'asdad', u'2015-10-31 23:00:30.098596', 17)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%堪培拉%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u582a\u57f9\u62c9%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%阿德莱德%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u963f\u5fb7\u83b1\u5fb7%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%其他%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u5176\u4ed6%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) INSERT INTO `doora_rent` (`subject`, `user`, `city`, `date`, `content`, `addTime`) VALUES ('你好a', '小明爸爸a', '悉尼', NULL, '我勒个去', '2015-10-31 23:12:25.533424'); args=[u'\u4f60\u597da', u'\u5c0f\u660e\u7238\u7238a', u'\u6089\u5c3c', None, u'\u6211\u52d2\u4e2a\u53bb', u'2015-10-31 23:12:25.533424']
+DEBUG utils.execute Line:89(0.001) UPDATE `doora_rent` SET `subject` = '你好a', `user` = '小明爸爸a', `city` = '悉尼', `date` = NULL, `content` = '我勒个去', `addTime` = '2015-10-31 23:12:25.533424' WHERE `doora_rent`.`id` = 18; args=(u'\u4f60\u597da', u'\u5c0f\u660e\u7238\u7238a', u'\u6089\u5c3c', u'\u6211\u52d2\u4e2a\u53bb', u'2015-10-31 23:12:25.533424', 18)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 23:13:23.405656'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 23:13:23.405656')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SELECT COUNT(*) AS `__count` FROM `doora_rent`; args=()
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC, `doora_rent`.`id` DESC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '72cw3me4ap6l4jwfgv3s03odmh7aa9hc' AND `django_session`.`expire_date` > '2015-10-31 23:13:23.492519'); args=('72cw3me4ap6l4jwfgv3s03odmh7aa9hc', u'2015-10-31 23:13:23.492519')
+DEBUG utils.execute Line:89(0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 8; args=(8,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=()
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 9; args=(9,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`id` = 11; args=(11,)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.001) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%悉尼%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u6089\u5c3c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%墨尔本%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u58a8\u5c14\u672c%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%堪培拉%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u582a\u57f9\u62c9%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%布里斯班%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u5e03\u91cc\u65af\u73ed%',)

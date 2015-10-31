@@ -64,7 +64,7 @@ def submit(request):
         logging.debug('request not belong to POST')
 
     logging.debug('error')
-    # return HttpResponse('error')
+    return HttpResponse('error')
 
 
 def show_post(request, pid):

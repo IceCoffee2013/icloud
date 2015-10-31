@@ -434,3 +434,10 @@ DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subje
 DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
 DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
 DEBUG utils.execute Line:89(0.000) SELECT `doora_rent`.`id`, `doora_rent`.`subject`, `doora_rent`.`user`, `doora_rent`.`city`, `doora_rent`.`date`, `doora_rent`.`content`, `doora_rent`.`addTime` FROM `doora_rent` WHERE `doora_rent`.`city` LIKE '%布里斯班%' ORDER BY `doora_rent`.`addTime` ASC, `doora_rent`.`subject` ASC, `doora_rent`.`city` ASC; args=(u'%\u5e03\u91cc\u65af\u73ed%',)
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+DEBUG utils.execute Line:89(0.007) SHOW FULL TABLES; args=None
+DEBUG utils.execute Line:89(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+WARNING trans_real.activate Line:221/Library/Python/2.7/site-packages/django/utils/translation/__init__.py:146: RemovedInDjango19Warning: The use of the language code 'zh-cn' is deprecated. Please use the 'zh-hans' translation instead.
+  return _trans.activate(language)
+

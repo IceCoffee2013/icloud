@@ -10,7 +10,9 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 # Create your views here.
 import time
 from doora.models import Rent, RentForm
-
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
 def home(request):
     infos = Rent.objects.all()

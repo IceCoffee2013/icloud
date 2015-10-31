@@ -43,6 +43,7 @@ def submit(request):
         # print form.Meta.model.date
         print request.POST
         print form
+        logging.debug(form)
         if form.is_valid(): # 验证表单
             print form.cleaned_data['subject']
             test = form.save(commit=False)
@@ -54,13 +55,15 @@ def submit(request):
             # return HttpResponse(t.render(c))
         else:
             form = RentForm() #获得表单对象
-            print 'is not valid'
+            print 'form is not valid'
+            logging.debug('form is not valid')
             return HttpResponseRedirect('/doora/publish')
 
     else:
         print 'request not belong to POST'
-        # logging.debug('request not belong to POST')
+        logging.debug('request not belong to POST')
 
+    logging.debug('error')
     return HttpResponse('error')
 
 
